@@ -280,7 +280,7 @@ console.log(updated)
 
 It's even easier to update single subdocuments. You can edit the document directly like a normal object.
 
-Let's say we want to change Ryu's ultimate name from Shinku Hadoken to Dejin Hadoken. What we do is:
+Let's say we want to change Ryu's ultimate name from Shinku Hadoken to Denjin Hadoken. What we do is:
 
 1. Use `findOne` to get Ryu.
 2. Change the `name` in `ultimate`
@@ -288,12 +288,12 @@ Let's say we want to change Ryu's ultimate name from Shinku Hadoken to Dejin Had
 
 ```js
 const ryu = await Characters.findOne({ name: 'Ryu' })
-ryu.ultimate.name = 'Dejin Hadoken'
+ryu.ultimate.name = 'Denjin Hadoken'
 
 const updated = await ryu.save()
 console.log(updated)
 ```
 
-<figure role="figure"><img src="/images/2019/mongoose-subdocuments/ryu-3.png" alt="Ryu document with Dejin Hadoken."></figure>
+<figure role="figure"><img src="/images/2019/mongoose-subdocuments/ryu-3.png" alt="Ryu document with Denjin Hadoken."></figure>
 
 [1]:	/blog/mongoose
